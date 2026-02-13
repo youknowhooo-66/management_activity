@@ -17,7 +17,6 @@ model User {
   email     String   @unique
   password  String
   name      String?
-  role      Role     @default(CLIENT)
   tokens    Token[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon src/config/database.js"
+    "start": "npx nodemon src/config/database.js",
+    "test:ex": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "migrate": "npx prisma migrate dev",
+    "build": "node src/server.js"
   },
   "repository": {
     "type": "git",
